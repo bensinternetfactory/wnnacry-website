@@ -1,91 +1,47 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import Image from "next/image";
+import drakeStudio from "/public/drakestudio.webp";
+import Link from "next/link";
+import Section from "./components/section";
+import Bio from "./components/bio";
+import Socials from "./components/socials";
+import About from "./components/about";
+import StudioImage from "./components/studioimage";
+import Credits from "./components/credits";
 
-const inter = Inter({ subsets: ['latin'] })
+//  border-2 border-lime-500
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+	return (
+		<main className="flex flex-col gap-2 p-5 bg-black lg:p-10">
+			<Section>
+				<Bio
+					bio="max lighthall is wnnacry. artist, producer, mix-engineer"
+					studio="phoenix down"
+					ad="need help with your mix?"
+					cta="1wnnacry@gmail.com"></Bio>
+			</Section>
+			<Socials
+				social_1_link="/"
+				social_1="Beatstars"
+				social_2_link="/"
+				social_2="YouTube"
+				social_3_link="/"
+				social_3="Instagram"
+				social_4_link="/"
+				social_4="Twitter"></Socials>
+			<Section>
+				<About
+					city="boston"
+					country="USA"
+					timezone="EST"
+					white_text="bullshit here bullshit here bullshit here bullshit here bullshit here."
+					gray_text="more bullshit here bullshit here bullshit here bullshit here. more
+          bullshit here bullshit here."></About>
+			</Section>
+			<StudioImage></StudioImage>
+			<Section>
+				<Credits></Credits>
+			</Section>
+		</main>
+	);
 }
