@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Credits(props) {
+export default function Credits(props: any) {
 	return (
 		<>
 			<div className="bg-[#18181a] basis-1/3 rounded-md p-10 gap-4 text-5xl text-white">

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Socials(props) {
+export default function Socials(props: any) {
 	return (
 		<section className="container flex gap-2 mx-auto text-white xl:px-44 ">
 			<Link

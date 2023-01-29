@@ -1,4 +1,4 @@
-export default function About(props) {
+export default function About(props: any) {
 	return (
 		<>
 			<div className="bg-[#18181a] basis-1/3 rounded-md p-10 flex flex-col gap-4">

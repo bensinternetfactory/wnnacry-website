@@ -2,7 +2,7 @@ import Image from "next/image";
 import profilePic from "/public/wnnacry.png";
 import Link from "next/link";
 
-export default function Bio(props) {
+export default function Bio(props: any) {
 	return (
 		<>
 			<div className="bg-[#18181a] basis-2/3 rounded-md p-10 flex flex-col gap-4">
