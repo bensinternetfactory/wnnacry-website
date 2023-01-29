@@ -12,7 +12,7 @@ import Credits from "./components/credits";
 
 export default function Home() {
 	return (
-		<main className="flex flex-col gap-2 p-5 bg-black lg:p-10">
+		<main className="flex flex-col gap-3 p-5 bg-black lg:p-10">
 			<Section>
 				<Bio
 					bio="max lighthall is wnnacry. artist, producer, mix-engineer"

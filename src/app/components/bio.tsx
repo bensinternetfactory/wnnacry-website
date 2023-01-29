@@ -15,7 +15,7 @@ export default function Bio(props: any) {
 					/>
 				</div>
 				<div>
-					<h1 className="text-6xl">
+					<h1 className="text-3xl md:text-6xl">
 						{props.bio}
 						<span className="text-[#8A8A93]"> currenty at {props.studio}.</span>
 					</h1>
@@ -46,7 +46,7 @@ export default function Bio(props: any) {
 						</defs>
 					</svg>
 				</div>
-				<h2 className="text-5xl text-white">{props.ad}</h2>
+				<h2 className="text-2xl text-white md:text-5xl">{props.ad}</h2>
 				<Link
 					className="p-5 text-xl rounded-full bg-cyan-500"
 					href="benfranzoso38@gmail.com">
