@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Credits(props: any) {
 	return (
 		<>
-			<div className="bg-[#18181a] basis-1/3 rounded-md p-10 gap-4 text-5xl text-white">
+			<div className="bg-[#18181a] basis-1/3 rounded-md p-10 gap-4 text-4xl md:text-5xl text-white">
 				<h4>featured discography:</h4>
 			</div>
 			<div className="bg-[#18181a] basis-1/3 rounded-md p-10 flex flex-col gap-8 justify-center items-center text-center">
@@ -31,7 +31,7 @@ export default function Credits(props: any) {
 						</defs>
 					</svg>
 				</div>
-				<h2 className="text-5xl text-white">
+				<h2 className="text-4xl text-white md:text-5xl">
 					in boston? book a studio session with me.
 				</h2>
 				<Link
@@ -40,7 +40,7 @@ export default function Credits(props: any) {
 					1wnnacry@gmail.com
 				</Link>
 			</div>
-			<div className="bg-[#18181a] basis-1/3 rounded-md p-10 gap-4 text-5xl flex flex-col text-white">
+			<div className="bg-[#18181a] basis-1/3 rounded-md p-10 gap-4 text-4xl md:text-5xl flex flex-col text-white">
 				<h4>credits:</h4>
 				<ul className="flex flex-wrap gap-2 text-2xl">
 					<li>lil tjay,</li>

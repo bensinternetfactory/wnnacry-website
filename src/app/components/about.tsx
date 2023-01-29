@@ -16,7 +16,7 @@ export default function About(props: any) {
 					</svg>
 				</div>
 				<div>
-					<h3 className="text-5xl">
+					<h3 className="text-4xl md:text-5xl">
 						based in<br></br>
 						{props.city},<br></br>
 						{props.country}.<br></br>
@@ -25,7 +25,7 @@ export default function About(props: any) {
 				</div>
 			</div>
 			<div className="bg-[#18181a] basis-2/3 rounded-md p-10 flex flex-col gap-4">
-				<h3 className="text-5xl">
+				<h3 className="text-4xl md:text-5xl">
 					{props.white_text}{" "}
 					<span className="text-[#8A8A93]">{props.gray_text}</span>
 				</h3>
